@@ -1,0 +1,89 @@
+@model IEnumerable<energy_bill.Models.BillEnergy>
+<br>
+<a class="btn btn-success" href="BillEnergy/Create">Adicionar Nova Conta</a>
+<br>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Data Leitura</th>
+                <th>Num. Leitura</th>
+                <th>Kw gasto</th>
+                <th>Valor a pagar</th>
+                <th>Data pagamento</th>
+                <th>Média consumo</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </tr>
+        </thead>
+
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.dateRead.ToString("d")</td>
+                <td>@item.numberRead</td>
+                <td>@item.kwSpent</td>
+                <td>@item.price</td>
+                <td>@item.datePayment.ToString("d")</td>
+                <td>@item.avgComsumption</td>
+                <td><a class="btn btn-danger" href="BillEnergy/Delete/@item.id">Deletar</a> </td>
+                <td><a class="btn btn-primary" href="BillEnergy/Edit/@item.id">Editar</a> </td>
+            </tr>
+        }
+    </table>
+</div>
+<br>
+<h3>Maior Consumo</h3>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Data Leitura</th>
+                <th>Num. Leitura</th>
+                <th>Kw gasto</th>
+                <th>Valor a pagar</th>
+                <th>Data pagamento</th>
+                <th>Média consumo</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>@ViewBag.theBillMax.id</td>
+                <td>@ViewBag.theBillMax.dateRead.ToString("d")</td>
+                <td>@ViewBag.theBillMax.numberRead</td>
+                <td>@ViewBag.theBillMax.kwSpent</td>
+                <td>@ViewBag.theBillMax.price</td>
+                <td>@ViewBag.theBillMax.datePayment.ToString("d")</td>
+                <td>@ViewBag.theBillMax.avgComsumption</td>
+            </tr>
+    </table>
+</div>
+<br>
+<h3>Menor Consumo</h3>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Data Leitura</th>
+                <th>Num. Leitura</th>
+                <th>Kw gasto</th>
+                <th>Valor a pagar</th>
+                <th>Data pagamento</th>
+                <th>Média consumo</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>@ViewBag.theBillMin.id</td>
+                <td>@ViewBag.theBillMin.dateRead.ToString("d")</td>
+                <td>@ViewBag.theBillMin.numberRead</td>
+                <td>@ViewBag.theBillMin.kwSpent</td>
+                <td>@ViewBag.theBillMin.price</td>
+                <td>@ViewBag.theBillMin.datePayment.ToString("d")</td>
+                <td>@ViewBag.theBillMin.avgComsumption</td>
+            </tr>
+    </table>
+</div>

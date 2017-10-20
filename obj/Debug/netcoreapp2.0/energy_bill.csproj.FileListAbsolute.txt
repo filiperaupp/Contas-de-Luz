@@ -1,0 +1,10 @@
+C:\Users\filip\Desktop\energy_bill\bin\Debug\netcoreapp2.0\energy_bill.deps.json
+C:\Users\filip\Desktop\energy_bill\bin\Debug\netcoreapp2.0\energy_bill.runtimeconfig.json
+C:\Users\filip\Desktop\energy_bill\bin\Debug\netcoreapp2.0\energy_bill.runtimeconfig.dev.json
+C:\Users\filip\Desktop\energy_bill\bin\Debug\netcoreapp2.0\energy_bill.dll
+C:\Users\filip\Desktop\energy_bill\bin\Debug\netcoreapp2.0\energy_bill.pdb
+C:\Users\filip\Desktop\energy_bill\obj\Debug\netcoreapp2.0\energy_bill.csproj.CoreCompileInputs.cache
+C:\Users\filip\Desktop\energy_bill\obj\Debug\netcoreapp2.0\energy_bill.AssemblyInfoInputs.cache
+C:\Users\filip\Desktop\energy_bill\obj\Debug\netcoreapp2.0\energy_bill.AssemblyInfo.cs
+C:\Users\filip\Desktop\energy_bill\obj\Debug\netcoreapp2.0\energy_bill.dll
+C:\Users\filip\Desktop\energy_bill\obj\Debug\netcoreapp2.0\energy_bill.pdb
